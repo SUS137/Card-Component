@@ -1,0 +1,90 @@
+:root{
+
+--White: hsl(0, 0%, 100%);
+--fc-paragraf: hsl(212, 45%, 89%);
+--fc-fondo: hsl(220, 15%, 55%);
+--fc-titulo: hsl(218, 44%, 22%);
+
+
+}
+
+*, *::after, *::before{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    text-align: center;
+
+}
+
+html{
+
+    font-size: 62.5%;
+}
+
+body{
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background-color: var(--fc-paragraf);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 1fr max-content 1fr;
+    grid-template-areas: 
+    " . . ."
+    " . card ."
+    ". . .";
+
+   
+}
+
+.main{
+    grid-area: card;
+   width:90%;
+   max-width:375px;
+   max-height: fit-content;
+   background-color: var(--White);
+   border-radius: 15px;
+   margin:0 auto;
+     
+}
+
+.card-container{
+    
+    padding:1em;
+    margin:0 auto;
+
+}
+
+.card-img{
+
+    display: block;
+    width:100%;
+    border-radius: 15px;
+    box-shadow: 0 ,0, 5%;
+
+}
+
+.card-texts{
+
+    padding:0 0.5em;
+}
+
+.card-title{
+
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 1.2em 0 1em;
+    box-shadow: 0, 0, 20%;
+    color:var(--fc-titulo);
+}
+
+.card-paragraf{
+
+    color:var(--fc-fondo);
+    font-size: 0.85em;
+    margin-bottom: 3em;
+
+}
